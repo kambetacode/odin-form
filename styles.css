@@ -1,0 +1,35 @@
+@font-face {
+    font-family: harry-potter;
+    src: url(./fonts/HARRYP__.TTF);
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: harry-potter;
+}
+
+.hero {
+    width: 35vw;
+}
+
+img {
+    height: 100vh;
+    width: 35vw;
+}
+
+.content {
+    width: 75vw;
+    background-color: #4D0F16;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 400;
+}
