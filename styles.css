@@ -3,6 +3,11 @@
     src: url(./fonts/HARRYP__.TTF);
 }
 
+@font-face {
+    font-family: xefora;
+    src: url(./fonts/Xefora-vp34.ttf);
+}
+
 :root {
     box-sizing: border-box;
 }
@@ -12,24 +17,131 @@ body {
     padding: 0;
     margin: 0;
     font-family: harry-potter;
+    overflow: hidden;
 }
 
-.hero {
-    width: 35vw;
-}
-
-img {
+.hero { 
+    width: 70vw;
     height: 100vh;
-    width: 35vw;
+}
+
+.hero>img {
+    width: 100%;
+    height: 100%;
+
 }
 
 .content {
-    width: 75vw;
-    background-color: #4D0F16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    background-color: #F3F2F2;
     text-align: center;
+}
+
+.panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-family: xefora;
+    font-weight: 400;
+    gap: 20px;
+}
+
+.text {
+    border: 1px dashed #2A623D;
+    width: 32rem;
+    color: #2A623D;
+    font-size: 28px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #2A623D;
+    background-color: #FAF9F9;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+}
+
+.form-element>input {
+    width: 350px;
+    height: 30px;
+    background-color: FAF9F9;
+    border: 1px solid #AAAAAA;
+    font-family: xefora;
+    font-size: 25px;
+}
+
+.form-element>input:invalid {
+    border: 1px solid red;
 }
 
 h1 {
     font-size: 100px;
-    font-weight: 400;
+    font-weight: 560;
+    color: #2A623D;
+    margin: 30px;
 }
+
+.submit {
+    width: 300px;
+    height: 50px;
+    font-family: xefora;
+    font-size: 30px;
+    margin-top: 30px;
+    background-color: #CFCCCC;
+    color: #2A623D;
+    border-style: none;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+
+.signature {
+    height: 35px;
+    width: 400px;
+    color: white;
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+    top: 950px;
+    left: 0px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.log-in-message {
+    display: flex;
+    font-size: 23px;
+    align-items: center;
+    gap: 10px;
+}
+
+.log-in-message>a{
+    text-decoration: none;
+    color: #2A623D;
+}
+
