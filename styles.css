@@ -28,7 +28,7 @@ body {
 .hero>img {
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
 }
 
 .content {
@@ -51,11 +51,18 @@ body {
     gap: 20px;
 }
 
+h1 {
+    font-size: 80px;
+    font-weight: 560;
+    color: #2A623D;
+    margin: 30px;
+}
+
 .text {
     border: 1px dashed #2A623D;
-    width: 32rem;
+    width: 90%;
     color: #2A623D;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .form {
@@ -78,13 +85,14 @@ body {
 .form-element {
     display: flex;
     flex-direction: column;
+    width: 80%;
     align-items: center;
     gap: 5px;
     font-size: 30px;
 }
 
 .form-element>input {
-    width: 350px;
+    width: 80%;
     height: 30px;
     background-color: FAF9F9;
     border: 1px solid #AAAAAA;
@@ -92,19 +100,14 @@ body {
     font-size: 25px;
 }
 
-.form-element>input:invalid {
-    border: 1px solid red;
-}
-
-h1 {
-    font-size: 100px;
-    font-weight: 560;
-    color: #2A623D;
-    margin: 30px;
+.focus{
+    outline: 1px solid #EEBA30;
+    border: 1px solid #EEBA30;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.18);
 }
 
 .submit {
-    width: 300px;
+    width: 40%;
     height: 50px;
     font-family: xefora;
     font-size: 30px;
@@ -116,6 +119,7 @@ h1 {
 
 .submit:hover {
     cursor: pointer;
+    
 }
 
 
@@ -145,3 +149,64 @@ h1 {
     color: #2A623D;
 }
 
+@media(max-width: 1500px) {
+    body {
+        flex-direction: column;
+    }
+    .hero { 
+        width: 103vw;
+        height: 30vh;
+    }
+
+    .content {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .panel {
+      width: 100vw;  
+    }
+
+    .form {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    .text {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .form-element {
+        font-size: 18px;
+    }
+
+    .form-element>input {
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .log-in-message {
+        font-size: 15px;
+    }
+
+    .submit {
+        font-size: 15px;
+    }
+
+    .signature {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: #AAAAAA;
+        color: #2A623D;
+        font-size: 18px;
+        text-align: center;
+        height: 22px;
+    }
+}
