@@ -150,7 +150,7 @@ h1 {
     color: #2A623D;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1200px) {
     body {
         flex-direction: column;
         background-color: #F3F2F2;
